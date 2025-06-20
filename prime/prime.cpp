@@ -44,8 +44,20 @@ bool is_perfect_square(int num) {
 int largest_prime_num(std::vector<int>& nums) {
     int retval = -1;
     for (int& num : nums) {
-        if (num > retval) {
-            if (is_prime(num)) {
+        if (is_prime(num)) {
+            if (num > retval) {
+                retval = num;
+            }
+        }
+    }
+    return retval;
+}
+
+int largest_perfect_square(std::vector<int>& nums) {
+    int retval = -1;
+    for (int& num : nums) {
+        if (is_perfect_square(num)) {
+            if (num > retval) {
                 retval = num;
             }
         }

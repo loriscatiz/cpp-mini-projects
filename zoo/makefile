@@ -1,5 +1,5 @@
 # Executable name
-TARGET = zoo
+TARGET = zoo.app
 
 # Source files
 SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp

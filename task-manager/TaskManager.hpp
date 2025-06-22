@@ -25,4 +25,5 @@ class TaskManager {
     void addNewTask(std::string title);
     void addNewTask(std::string title, Priority priority);
     bool deleteTask(size_t id);
+    bool taskExists(size_t id) const;
 };

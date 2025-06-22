@@ -1,5 +1,5 @@
 # Executable name
-TARGET = app
+TARGET = task-manager.app
 
 # Source files
 SRC = main.cpp Task.cpp TaskManager.cpp

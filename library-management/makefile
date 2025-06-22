@@ -1,4 +1,4 @@
-app: main.o Book.o Member.o Library.o
+library.app: main.o Book.o Member.o Library.o
 	g++ -o app main.o Book.o Member.o Library.o
 
 main.o: main.cpp Book.hpp Member.hpp Library.hpp

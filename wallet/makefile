@@ -1,4 +1,4 @@
-app: main.o wallet.o transaction.o
+wallet.app: main.o wallet.o transaction.o
 	g++ -o app main.o wallet.o transaction.o
 
 main.o: main.cpp wallet.hpp
@@ -11,4 +11,4 @@ transaction.o: transaction.cpp
 	g++ -c transaction.cpp
 
 clean:
-	rm -f *.o app
+	rm -f *.o wallet.app

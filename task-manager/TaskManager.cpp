@@ -45,8 +45,10 @@ void TaskManager::printCompletedTasks() const {
     bool empty = true;
 
     for (const auto [id, task] : tasks) {
-        if (task.isCompleted()) task.printBasic();
-        empty = false;
+        if (task.isCompleted()){
+            task.printBasic();
+            empty = false;
+        }
     }
     if (empty) std::cout << "There are no completed tasks\n";
 }
